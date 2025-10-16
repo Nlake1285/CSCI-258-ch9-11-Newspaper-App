@@ -37,8 +37,17 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # 3rd party
+    "crispy_forms",  # new
+    "crispy_bootstrap5",  # new
+    # local
     "accounts",
+    "pages", # new
 ]
+
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
